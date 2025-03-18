@@ -1,5 +1,6 @@
 export function maiorNumero(lista) {
   let maior = lista[0];
+  let indice = 0;
 
   if (lista.length === 0 || !Array.isArray(lista)) {
     return null;
@@ -8,9 +9,10 @@ export function maiorNumero(lista) {
   for (let i = 0; i < lista.length; i++) {
     if (maior < lista[i]) {
       maior = lista[i];
+      indice = i;
     }
   }
-  return maior;
+  return indice;
 }
 
 export function verificarParOuImpar(numero) {

@@ -13,8 +13,8 @@ import {
 // Teste para a função maiorNumero
 describe("maiorNumero", () => {
   test("deve retornar o índice do maior número da lista", () => {
-    expect(maiorNumero([1, 3, 5, 7, 2])).toBe(7);
-    expect(maiorNumero([10, 3, 5, 7, 2])).toBe(10);
+    expect(maiorNumero([1, 3, 5, 7, 2])).toBe(3);
+    expect(maiorNumero([10, 3, 5, 7, 2])).toBe(0);
   });
   test("deve retornar null para lista vazia", () => {
     expect(maiorNumero([])).toBe(null);
